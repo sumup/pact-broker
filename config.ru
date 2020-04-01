@@ -9,10 +9,6 @@ use Rack::Auth::Basic, "Restricted Area" do |username, password|
 end
 
 app = PactBroker::App.new do | config |
-  # change these from their default values if desired
-  # config.log_dir = "./log"
-  # config.auto_migrate_db = true
-  # config.use_hal_browser = true
   config.database_connection = Sequel.connect(ENV['DATABASE_URL'], adapter: "postgres", encoding: 'utf8')
 end
 
