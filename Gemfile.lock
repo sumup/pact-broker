@@ -102,7 +102,7 @@ GEM
       thor (~> 0.18)
     padrino-support (0.14.4)
     pg (1.2.3)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
     randexp (0.1.7)
